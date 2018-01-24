@@ -17,14 +17,14 @@ git commit -m "add file hello"
 #自动更新变化的文件 -a auto
 git commit -a  
 #增加一个远程服务器的别名
-git remote add matsn git@github.com:shinely/matsn
+git remote add matsn git@github.com:shinely/matsn.git
 #删除远程版本库的别名
 git remote rm matsn
 #将本地仓库master提交到Github的shinely/matsn版本库中 更新本地文件到github服务器
 git push -u git@github.com:shinely/matsn master
 git push -u matsn master
 #从github服务器仓库下载文件  获取到本地不合并
-git getch git@github.com:shinely/matsn.git
+git fetch git@github.com:shinely/matsn.git
 #获取并合并内容到本地
 git pull git@github.com:shinely/matsn.git[M`2/
 
